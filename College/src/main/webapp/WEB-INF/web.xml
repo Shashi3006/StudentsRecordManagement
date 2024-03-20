@@ -1,0 +1,37 @@
+
+<web-app>
+  <welcome-file-list>
+    <welcome-file>StudentsResult.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>Aa</servlet-name>
+     <servlet-class>com.College.StudentsResult</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Aa</servlet-name>
+     <url-pattern>/StudentsResult</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+     <servlet-name>Bb</servlet-name>
+     <servlet-class>com.College.ResultsOut</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Bb</servlet-name>
+     <url-pattern>/ResultsOut</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+     <servlet-name>Cc</servlet-name>
+     <servlet-class>com.Drive.Placement</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Cc</servlet-name>
+     <url-pattern>/Placement</url-pattern>
+  </servlet-mapping>
+</web-app>

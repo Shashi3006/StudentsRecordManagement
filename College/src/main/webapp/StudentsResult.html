@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentsResult</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="S_Details">
+            <h1>Student Details</h1>
+            <form class="form_container" action="StudentsResult">
+                <div class="inputs">
+                 <label for="S_name">Student name: </label>
+                 <input type="text" name="S_name" id="S_name" required />
+                </div>
+
+                <div class="inputs">
+                 <label for="rollNo">Roll no.: </label>
+                 <input type="number" name="rollNo" id="rollNo" required />
+                </div>
+
+                <div class="inputs">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="dob" id="dob" required />
+                </div>
+
+                <h4 style="border-top: 1px solid #000; padding-top: 10px;">Enter the Marks</h4>
+                <div class="inputs">
+                    <label for="frend">Frontend: </label>
+                    <input type="number" name="frend" id="frend" min="0" max="100" required />
+                </div>
+
+                <div class="inputs">
+                    <label for="java">Java: </label>
+                    <input type="number" name="java" id="java" min="0" max="100" required />
+                </div>
+
+                <div class="inputs">
+                    <label for="sql">SQL: </label>
+                    <input type="number" name="sql" id="sql" min="0" max="100" required />
+                </div>
+
+                <div style="text-align: center;">
+                    <input type="submit" value="Submit" class="btn-submit" />
+                </div>
+            </form>
+
+        </div>
+      </div>
+</body>
+</html>

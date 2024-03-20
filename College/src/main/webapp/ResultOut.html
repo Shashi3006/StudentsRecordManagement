@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Results</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+       <div class="container">
+        <form class="Results_formContainer" id="resultsForm" action="ResultsOut">
+                <h3>Roll no.: </h3>
+                <input type="number" name="rollNo" id="RollNo_inputs" required />
+                
+                <input type="submit" class="btn-submit" value="Submit" onclick="submitForm('ResultsOut')" />
+         
+        </form>
+        
+        <form class="Results_formContainer" id="placementForm" action="Placement">
+                <input type="hidden" name="rollNo" id="hiddenRollNoInput" required />
+             <input type="submit" class="btn-submit" value="Placement Drive" onclick="submitForm('Placement')" />
+        </form>
+        
+    </div>
+    
+    <script>
+        // Function to set action attribute of form and submit it
+        function submitForm(action) {
+            var rollNo = document.getElementById("RollNo_inputs").value;
+            document.getElementById("hiddenRollNoInput").value = rollNo;
+            document.getElementById(action + "Form").action = action;
+            document.getElementById(action + "Form").submit();
+        }
+    </script>
+</body>
+</html>

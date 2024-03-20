@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column; 
+    background-color: rgb(176, 207, 233);
+}
+.S_Details{
+    min-height: 50vh;
+    width: 40vw;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+}
+#S_name, #rollNo, #dob, #frend, #java, #sql{
+    height: 30px;
+    width: 30%;
+    margin: 8px 0;
+    padding-left: 10px;
+}
+.S_Details h1,h4{
+    text-align: center;
+}
+.form_container .inputs{
+    margin: 20px 0;
+}
+.btn-submit{
+    height: 40px;
+    min-width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(52, 211, 52);
+    box-shadow: none;
+    background-color: rgb(52, 211, 52);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Results_formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+#RollNo_inputs{
+    height: 30px;
+    width: 90%;
+    margin: 15px 0;
+}
+
+
+
+.classTable {
+    width: 80%;
+    border-collapse: collapse; 
+}
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 18px 0;
+}
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 12px;
+}
+tr {
+    background-color: #93e07f;
+}
